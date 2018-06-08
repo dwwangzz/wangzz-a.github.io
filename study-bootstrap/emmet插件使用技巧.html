@@ -1,0 +1,130 @@
+<!-- 生成html5文档结构 html:5 + tab 或 ! + tab -->
+<!-- emmet语法 + tab 生成html标签 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta:utf -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <!-- meta:vp -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta:compat -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- link:css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- script:src -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <p>1.生成带类样式的标签</p>
+  <!-- p.info -->
+  <p class="info"></p>
+  <!-- div.red 或 .red （div是emmet默认的标签）-->
+  <div class="red"></div>
+  <p>2.生成带id的标签</p>
+  <!-- h2#header -->
+  <h2 id="header"></h2>
+  <!-- #header -->
+  <div id="header"></div>
+  <p>3.a标签</p>
+  <!-- a -->
+  <a href=""></a>
+  <!-- a:link -->
+  <a href="http://"></a>
+  <!-- a:mail -->
+  <a href="mailto:"></a>
+  <p>4.根据标签之间的位置关系来生成标签</p>
+  <!-- 生成同级标签，兄弟标签 -->
+  <!-- h2.header+p.info -->
+  <h2 class="header"></h2>
+  <p class="info"></p>
+  <!-- 后带标签,也叫下级标签 -->
+  <!-- ul>li -->
+  <ul>
+    <li></li>
+  </ul>
+  <!-- ul>li+li+li -->
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <!-- 生成父级标签,也叫上级标签 （^ 托字符）-->
+  <!-- h2>span^p.info -->
+  <h2><span></span></h2>
+  <p class="info"></p>
+  <p>5.你也可以在生成标签的时候,同时生成内部文本</p>
+  <!-- a{百度} -->
+  <a href="">百度</a>
+  <!-- 自定义属性 -->
+  <!-- a[href='www.baidu.com']{百度} -->
+  <a href="www.baidu.com">百度</a>
+  <!-- p[title="这是一段说明文字"]{这是一段说明文字} -->
+  <p title="这是一段说明文字">这是一段说明文字</p>
+  <p>6.重复生成功能 *</p>
+  <!-- ul>li{li$}*3 -->
+  <ul>
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+  </ul>
+  <p>快速生成一个有8个列表项的导航</p>
+  <!-- ul.list>li.item*8>a{导航} -->
+  <ul class="list">
+    <li class="item"><a href="">导航</a></li>
+    <li class="item"><a href="">导航</a></li>
+    <li class="item"><a href="">导航</a></li>
+    <li class="item"><a href="">导航</a></li>
+    <li class="item"><a href="">导航</a></li>
+    <li class="item"><a href="">导航</a></li>
+    <li class="item"><a href="">导航</a></li>
+    <li class="item"><a href="">导航</a></li>
+  </ul>
+  <p>给标签自动加编号或排序: $,@</p>
+  <!-- ul.list>li.item*8>a{导航$} -->
+  <ul class="list">
+    <li class="item"><a href="">导航1</a></li>
+    <li class="item"><a href="">导航2</a></li>
+    <li class="item"><a href="">导航3</a></li>
+    <li class="item"><a href="">导航4</a></li>
+    <li class="item"><a href="">导航5</a></li>
+    <li class="item"><a href="">导航6</a></li>
+    <li class="item"><a href="">导航7</a></li>
+    <li class="item"><a href="">导航8</a></li>
+  </ul>
+  <!-- ul.list>li.item*8>a{导航$$} -->
+  <ul class="list">
+    <li class="item"><a href="">导航01</a></li>
+    <li class="item"><a href="">导航02</a></li>
+    <li class="item"><a href="">导航03</a></li>
+    <li class="item"><a href="">导航04</a></li>
+    <li class="item"><a href="">导航05</a></li>
+    <li class="item"><a href="">导航06</a></li>
+    <li class="item"><a href="">导航07</a></li>
+    <li class="item"><a href="">导航08</a></li>
+  </ul>
+  <!-- ul.list>li.item*8>a{导航$$@-} 倒序-->
+  <ul class="list">
+    <li class="item"><a href="">导航08</a></li>
+    <li class="item"><a href="">导航07</a></li>
+    <li class="item"><a href="">导航06</a></li>
+    <li class="item"><a href="">导航05</a></li>
+    <li class="item"><a href="">导航04</a></li>
+    <li class="item"><a href="">导航03</a></li>
+    <li class="item"><a href="">导航02</a></li>
+    <li class="item"><a href="">导航01</a></li>
+  </ul>
+  <!-- ul.list>li.item*8>a{导航$$$$@100} 从指定开始标记 -->
+  <ul class="list">
+    <li class="item"><a href="">导航0100</a></li>
+    <li class="item"><a href="">导航0101</a></li>
+    <li class="item"><a href="">导航0102</a></li>
+    <li class="item"><a href="">导航0103</a></li>
+    <li class="item"><a href="">导航0104</a></li>
+    <li class="item"><a href="">导航0105</a></li>
+    <li class="item"><a href="">导航0106</a></li>
+    <li class="item"><a href="">导航0107</a></li>
+  </ul>
+</body>
+</html>

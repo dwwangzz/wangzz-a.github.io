@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <title>bootstrap</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- 标记文本高亮显示，默认背景为黄色 -->
+        <p>锄禾日当午，<mark>汗滴禾下土</mark>。谁知盘中餐，粒粒皆辛苦。</p>
+        <!-- 给文本增加删除线，提示用户信息无效，通常用来作对比 -->
+        <p>锄禾日当午，<del>汗滴禾下土</del>。谁知盘中餐，粒粒皆辛苦。</p>
+        <!-- 无用文本，<s>与<del>显示效果是一样的 -->
+        <p>锄禾日当午，<s>汗滴禾下土</s>。谁知盘中餐，粒粒皆辛苦。</p>
+        <!-- <ins>插入文本，文本用下划线标出 -->
+        <p>锄禾日当午，<ins>汗滴禾下土</ins>。谁知盘中餐，粒粒皆辛苦。</p>
+        <!-- <u>给文本加下划线，视觉与<ins>是一样的 -->
+        <p>锄禾日当午，<u>汗滴禾下土</u>。谁知盘中餐，粒粒皆辛苦。</p>
+        <!-- 在当前段落添加小号文本，注意与在标题中添加的区别 -->
+        <p>锄禾日当午，<small>汗滴禾下土</small>。谁知盘中餐，粒粒皆辛苦。</p>
+        <!-- <strong> 语气加重，其实就是加醋显示 -->
+        <p>锄禾日当午，<strong>汗滴禾下土</strong>。谁知盘中餐，粒粒皆辛苦。</p>
+        <p class="text-left">锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+        <p class="text-center">锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+        <p class="text-right">锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+        <p class="text-justify">锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+        <!-- 不换行 -->
+        <p class="text-nowrap">锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+        <p>英文转换成小写<span class="text-lowercase">WWW.BAIDU.COM</span></p>
+        <p>英文转换成大写<span class="text-uppercase">www.baidu.com</span></p>
+        <p>首字母大写<span class="text-capitalize">www.baidu.com</span></p>
+        <!-- 缩略引用 -->
+        <abbr title="Professional Hypertext Preprocessor">PHP</abbr>
+        <!-- 引用 -->
+        <blockquote>
+          <p>锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+        </blockquote>
+        <!-- 进一步说明或提示引用 -->
+        <blockquote>
+          <p>锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+          <footer>诗名<citle title="悯农是一首诗">悯农</citle></footer>
+        </blockquote>
+        <!-- 引用文本向右对其 -->
+        <blockquote class="blockquote-reverse">
+          <p>锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+          <footer>诗名<citle title="悯农是一首诗">悯农</citle></footer>
+        </blockquote>
+        <!-- 无序列表 -->
+        <!-- ul>li{列表项$}*5+ul>li{子列表项$}*3 -->
+        <ul>
+          <li>列表项1</li>
+          <li>列表项2</li>
+          <li>列表项3</li>
+          <li>列表项4</li>
+          <li>列表项5</li>
+          <ul>
+            <li>子列表项1</li>
+            <li>子列表项2</li>
+            <li>子列表项3</li>
+          </ul>
+        </ul>
+        <!-- 有序列表 -->
+        <!-- ol>li{列表项$}*5+ol>li{子列表项$}*3 -->
+        <ol>
+          <li>列表项1</li>
+          <li>列表项2</li>
+          <li>列表项3</li>
+          <li>列表项4</li>
+          <li>列表项5</li>
+          <ol>
+            <li>子列表项1</li>
+            <li>子列表项2</li>
+            <li>子列表项3</li>
+          </ol>
+        </ol>
+        <!-- 无样式列表 -->
+        <!-- ul.list-unstyled>li{列表项$}*5+ul>li{子列表项$}*3 -->
+        <ul class="list-unstyled">
+          <li>列表项1</li>
+          <li>列表项2</li>
+          <li>列表项3</li>
+          <li>列表项4</li>
+          <li>列表项5</li>
+          <ul>
+            <li>子列表项1</li>
+            <li>子列表项2</li>
+            <li>子列表项3</li>
+          </ul>
+        </ul>
+        <!-- 内联列表，所有列表一行显示 -->
+        <!-- ul.list-inline>li{列表项$}*5 -->
+        <ul class="list-inline">
+          <li>列表项1</li>
+          <li>列表项2</li>
+          <li>列表项3</li>
+          <li>列表项4</li>
+          <li>列表项5</li>
+        </ul>
+        <!-- 描述型列表 -->
+        <dl>
+          <dt>百度</dt>
+          <dd>www.baidu.com</dd>
+          <dt>淘宝</dt>
+          <dd>www.taobao.com</dd>
+          <dt>京东</dt>
+          <dd>www.jd.com</dd>
+        </dl>
+        <!-- 水平排列的描述型列表，拉宽才能看到效果 -->
+        <dl class="dl-horizontal">
+          <dt>百度</dt>
+          <dd>www.baidu.com</dd>
+          <dt>淘宝</dt>
+          <dd>www.taobao.com</dd>
+          <dt>京东</dt>
+          <dd>www.jd.com</dd>
+        </dl>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
