@@ -1,0 +1,9 @@
+.*
+*.class
+*.jar
+*.war
+*.iml
+target
+!.gitignore
+!pom.xml
+!log4j.properties
