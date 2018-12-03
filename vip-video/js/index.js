@@ -21,13 +21,14 @@ $(function () {
 function goVideo(url) {
     // url = 'https://v.youku.com/v_show/id_XMjI2ODA4MTYw.html?spm=a2h0k.11417342.soresults.dselectbutton&s=cbfb80fe962411de83b1';
     var apis = getAPIUrl();
-    url = apis[0].url + url;
+    url = apis[1].url + url;
     window.open('./video.html?url=' + url);
 }
 
 function getAPIUrl() {
     var apis = [
         {name: "百域阁", url: "http://api.baiyug.cn/vip/index.php?url=", title: "转圈圈就换线路", intab: 1},
+        {name: "百域阁2019", url: "http://app.baiyug.cn:2019/vip/?url=", title: "转圈圈就换线路", intab: 1},
         {name: "够低调", url: "http://goudidiao.com/?url=", title: "转圈圈就换线路", intab: 1},
         {name: "搜你妹", url: "http://www.sonimei.cn/?url=", title: "综合接口，VIP视频*** 更新可用【作者sonimei134】脚本的接口", intab: 0},
         {name: "vParse", url: "https://api.vparse.org/?url=", title: "支持腾讯", intab: 1},
