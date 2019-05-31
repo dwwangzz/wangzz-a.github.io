@@ -137,7 +137,7 @@ if (typeof jQuery === 'undefined') {
 
 
   // ALERT PLUGIN DEFINITION
-  // =======================
+  // =======================x
 
   function Plugin(option) {
     return this.each(function () {
